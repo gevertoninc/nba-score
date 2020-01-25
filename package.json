@@ -1,0 +1,17 @@
+{
+  "name": "nba-score",
+  "version": "1.0.0",
+  "description": "NBA Ranking, Teams, Etc.",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "vue-cli": "^2.9.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ghostL0rd",
+  "license": "ISC"
+}

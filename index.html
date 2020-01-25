@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>NBA Score</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{ title }}</h1>
+            <input type="text" v-model="test" v-on:keyup.enter="addItem()" />
+            <ul>
+                <li v-for="item in list">
+                    {{ item.text }}
+                    <button v-on:click="removeItem($item)">Remover</button>
+                </li>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    title: 'Tabela',
+                    test: '',
+                    list: []
+                },
+                methods: {
+                    addItem () {
+                        this.list.push({ text: this.test })
+                    },
+                    removeItem (index) {
+                        this.list.splice(index, 1)
+                    }
+                }
+            })
+        </script
+    </body>
+</html>
